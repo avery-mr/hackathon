@@ -4,14 +4,14 @@ This plan breaks the MVP into small, independently verifiable increments. Comple
 
 ## 1. Project initialization and “Hello World”
 
-- [ ] Scaffold a Vite app with React and TypeScript.
-- [ ] Replace the starter screen with a single “Hackathon Project Finder — Hello World” heading.
-- [ ] Add `dev`, `build`, `preview`, `lint`, and `typecheck` scripts.
-- [ ] Add a `.gitignore` that excludes dependencies, build output, local environment files, logs, and editor artifacts.
-- [ ] Run the app locally and verify the heading renders.
-- [ ] Run a production build and preview it locally.
+- [x] Scaffold a Vite app with React and TypeScript.
+- [x] Replace the starter screen with a single “Hackathon Project Finder — Hello World” heading.
+- [x] Add `dev`, `build`, `preview`, `lint`, and `typecheck` scripts.
+- [x] Add a `.gitignore` that excludes dependencies, build output, local environment files, logs, and editor artifacts.
+- [x] Run the app locally and verify the heading renders.
+- [x] Run a production build and preview it locally.
 - [ ] Security: commit the package lockfile, review installed packages, and ensure no secrets or credentials are present.
-- [ ] Documentation: add a README with prerequisites, installation, local development, build, and preview commands.
+- [x] Documentation: add a README with prerequisites, installation, local development, build, and preview commands.
 
 ## 2. Deploy the “Hello World” build
 
