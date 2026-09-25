@@ -49,6 +49,10 @@ npm run format:check  # Prettier, check only
 
 Use `npm run lint:fix` and `npm run format` to fix issues automatically.
 
+## Continuous integration
+
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on every push to `main` and every pull request. It uses the Node.js version from `.nvmrc`, caches npm downloads, and runs `npm ci`, lint, format check, typecheck, and build.
+
 ## Deploy
 
 The app is a static site hosted on [Netlify](https://www.netlify.com/). Deploys are driven by the Netlify CLI from CI rather than a Netlify UI Git connection; setup is tracked in step 4 of [docs/TODO.md](docs/TODO.md).
