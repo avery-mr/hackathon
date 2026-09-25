@@ -24,11 +24,11 @@ For every item:
    - [x] Build the project
 
 3. Initialize unit tests (Jest + React Testing Library)
-   - [ ] Add Jest and React Testing Library dependencies
-   - [ ] Add test config (jest.config, setupTests, tsconfig updates)
-   - [ ] Add npm scripts: `test`, `test:watch`, `test:ci`
-   - [ ] Create first unit test (Hello World renders)
-   - [ ] Update CI workflow to run unit tests step
+   - [x] Add Jest and React Testing Library dependencies
+   - [x] Add test config (jest.config, setupTests, tsconfig updates)
+   - [x] Add npm scripts: `test`, `test:watch`, `test:ci`
+   - [x] Create first unit test (Hello World renders)
+   - [x] Update CI workflow to run unit tests step
 
 4. Netlify deployment via CLI
    - [ ] Add `netlify-cli` as devDependency

@@ -49,9 +49,21 @@ npm run format:check  # Prettier, check only
 
 Use `npm run lint:fix` and `npm run format` to fix issues automatically.
 
+## Unit tests
+
+Unit tests use [Jest](https://jestjs.io/) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and live next to the code as `*.test.tsx` files.
+
+```bash
+npm test            # run once
+npm run test:watch  # re-run on file changes
+npm run test:ci     # CI mode with a coverage report in coverage/
+```
+
+Configuration lives in `jest.config.js`, `src/setupTests.ts` (adds the `jest-dom` matchers), and `tsconfig.test.json` (type-checks tests as part of `npm run typecheck`). Jest runs with Node's `--experimental-vm-modules` flag because React Router is published as ES modules only; `test/polyfills.js` adds the `TextEncoder` global that jsdom lacks.
+
 ## Continuous integration
 
-[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on every push to `main` and every pull request. It uses the Node.js version from `.nvmrc`, caches npm downloads, and runs `npm ci`, lint, format check, typecheck, and build.
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on every push to `main` and every pull request. It uses the Node.js version from `.nvmrc`, caches npm downloads, and runs `npm ci`, lint, format check, typecheck, unit tests, and build.
 
 ## Deploy
 
